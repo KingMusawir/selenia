@@ -1,0 +1,22 @@
+.slick-dots li button:before {
+  font-size: 40px;
+}
+.slick-dots li.slick-active button:before {
+  opacity: 0.75;
+  color: #c2f4c2;
+}
+.slick-next,
+.slick-prev {
+  display: none !important;
+}
+@media screen and (max-width: 900px) {
+  .slick-slide > div > div {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.slick-list {
+  overflow-y: visible !important;
+  padding-top: 50px;
+}

@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* overflow: hidden; */
+  font-family: 'Poppins', sans-serif;
+}
+body {
+  background-image: linear-gradient(
+      to top right,
+      rgba(27, 33, 30, 0.75),
+      rgba(27, 33, 30, 0.75)
+    ),
+    /* top-middle */
+      linear-gradient(to bottom, rgba(27, 33, 30, 0.8), rgba(27, 33, 30, 0.75)),
+    /* middle-left */
+      linear-gradient(
+        to bottom right,
+        rgba(27, 33, 30, 0.75),
+        rgba(27, 33, 30, 0.75)
+      ),
+    /* bottom-left */ url('./assets/bgimage.png'); /* Your image URL */
+  background-size: 100% 100%, 100% 100%, 100% 100%, cover; /* Adjust as needed */
+  background-position: top center, left top, left bottom, center; /* Adjust as needed */
+  background-repeat: no-repeat; /* Prevent gradients from repeating */
+  /* height: 100vh; */
+}
+.hero-bg {
+  background-image: url(./assets/bordericon.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: 9999999;
+  padding: 40px;
+}
+@media screen and (min-width: 1024px) {
+  .hero-text-box,
+  .left-image,
+  .right-image {
+    position: relative;
+  }
+
+  .hero-text-box::before,
+  .right-image::before,
+  .left-image::before,
+  .subcription::before {
+    content: '';
+    width: 300px;
+    padding-bottom: 300px;
+    border-radius: 50%;
+    background-image: linear-gradient(to right, #00c56664, #00ffa22c);
+    position: absolute;
+    filter: blur(50px) brightness(0.65);
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    z-index: -999999999;
+    box-shadow: 20px 50px 300px rgba(60, 119, 88, 0.75);
+  }
+  .right-image::before {
+    transform: translate(-20%, -50%) !important;
+    top: 30%;
+  }
+  .left-image::before {
+    transform: translate(100%, -50%) !important;
+    top: 40%;
+    right: 40%;
+  }
+  /* .subcription::before {
+    z-index: 9999 !important;
+  } */
+}
+
+@media screen and (max-width: 900px) {
+  /* Adjust padding and background size for tablets */
+  .hero-bg {
+    padding: 40px !important; /* Small padding for tablets */
+    background-size: 100%; /* Adjust background size as needed */
+  }
+}
+@media screen and (max-width: 768px) {
+  /* Adjust padding and background size for tablets */
+  .hero-bg {
+    background-image: url(./assets/bordericonsmall.png);
+    background-repeat: no-repeat;
+    background-position: right -5px top;
+    padding: 0px !important;
+  }
+}
