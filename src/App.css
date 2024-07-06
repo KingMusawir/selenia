@@ -65,16 +65,13 @@ body {
     top: 40%;
     right: 40%;
   }
-  /* .subcription::before {
-    z-index: 9999 !important;
-  } */
 }
 
 @media screen and (max-width: 900px) {
   /* Adjust padding and background size for tablets */
   .hero-bg {
-    padding: 40px !important; /* Small padding for tablets */
-    background-size: 100%; /* Adjust background size as needed */
+    padding: 40px !important;
+    background-size: 100%;
   }
 }
 @media screen and (max-width: 768px) {
