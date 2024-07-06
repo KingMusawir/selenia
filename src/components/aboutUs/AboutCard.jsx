@@ -2,6 +2,8 @@ import React from 'react';
 import AboutCardProp from './AboutCardProp';
 import Slider from 'react-slick';
 import styles from './About.module.css';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 
 function AboutCard() {
   const settings = {
