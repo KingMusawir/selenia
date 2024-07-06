@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Navlinks, Navbtn, ShowModal } from './Navlinks';
-import { RxHamburgerMenu } from 'react-icons/rx';
+import { TbMenuDeep } from 'react-icons/tb';
 
 function NavBar() {
   const [isModal, setIsModal] = useState(false);
@@ -25,7 +25,7 @@ function NavBar() {
         <Navbtn value='Login' />
       </div>
 
-      <RxHamburgerMenu
+      <TbMenuDeep
         size='40px'
         color='#00FFA3'
         onClick={openModal}
